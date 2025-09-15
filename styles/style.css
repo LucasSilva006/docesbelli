@@ -3,3 +3,51 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+
+    /* Cores */
+    --cor-rosa1: #fdf4f7;
+    --cor-rosa2: #f9d7d8;
+    --cor-marrom: #654336;
+    --cor-dourada-deg: linear-gradient(90deg, #f1bd61, #f6d78a);
+
+    /* Fontes */
+    --fonte-elegante: 'Great Vibes', cursive;
+    --fonte-moderna: 'Poppins', sans-serif;
+    --fonte-leitura: 'PT Serif', serif;
+    
+    /* Pesos das fontes */
+    --peso-light: 300;
+    --peso-normal: 400;
+    --peso-medium: 500;
+    --peso-semi-bold: 600;
+    --peso-bold: 700;
+    
+    /* Tamanhos de fonte */
+    --texto-pequeno: 0.875rem;    /* 14px */
+    --texto-normal: 1rem;         /* 16px */
+    --texto-medio: 1.125rem;      /* 18px */
+    --texto-grande: 1.25rem;      /* 20px */
+    --titulo-pequeno: 1.5rem;     /* 24px */
+    --titulo-medio: 2rem;         /* 32px */
+    --titulo-grande: 2.5rem;      /* 40px */
+    --titulo-hero: 3rem;          /* 48px */
+}
+
+h1 {
+    font-family: var(--fonte-leitura);
+    font-size: var(--titulo-grande);
+}
+
+h2 {
+    font-family: var(--fonte-moderna);
+    font-weight: var(--peso-semi-bold);
+    font-size: var(--titulo-medio);
+}
+
+p {
+    font-family: var(--fonte-moderna);
+    font-weight: var(--peso-normal);
+    font-size: var(--texto-normal);
+}
