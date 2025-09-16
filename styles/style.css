@@ -119,7 +119,7 @@ header {
   min-height: 40vh;
   display: flex;
   flex-direction: column;
-  background-image: url("imagens/img-hero.webp");
+  background-image: url("./imagens/img-hero.webp");
   background-size: cover;
   background-position: center center;
 }
