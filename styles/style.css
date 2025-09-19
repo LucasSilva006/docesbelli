@@ -29,7 +29,7 @@
   --texto-medio: 1.125rem; /* 18px */
   --texto-grande: 1.25rem; /* 20px */
   --titulo-pequeno: 1.5rem; /* 24px */
-  --titulo-medio: 2rem; /* 32px */
+  --titulo-medio: 1.8rem; /* 32px */
   --titulo-grande: 2.5rem; /* 40px */
   --titulo-hero: 3rem; /* 48px */
 }
@@ -48,67 +48,82 @@ h2 {
 p {
   font-family: var(--fonte-texto);
   font-weight: var(--peso-normal);
-  font-size: var(--texto-normal);
+  font-size: var(--texto-pequeno);
 }
 
 header {
+  font-family: var(--fonte-subtitulo);
+  color: var(--cor-marrom);
+  background-color: var(--cor-rosa1);
+  padding: 8px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--cor-rosa1);
+  position: sticky;
+  top: -1px;
+  z-index: 1000;
 }
 
-.logo-header {
-  display: flex;
-  padding: 10px 15px;
-  align-items: center;
-  column-gap: 20px;
-}
-
-.img-logo-header {
+header img {
   width: 50px;
+  height: auto;
   border-radius: 100%;
 }
 
-.nome-logo-header {
-  font-family: var(--fonte-titulos);
-  color: var(--cor-marrom);
+.texto-logo {
   font-size: var(--texto-grande);
+}
+
+.logo-inicial {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--cor-marrom);
+  cursor: pointer;
+  transition: color 0.3s ease;
   font-weight: var(--peso-bold);
 }
 
-.hamburger-menu {
-  width: 50px;
-  height: 50px;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  display: flex;
+.menu-toggle:hover {
+  color: var(--cinza-claro);
+}
+
+.menu {
+  display: none;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 6px;
-  transition: all 0.3s ease;
+  gap: 1rem;
+  background: var(--cor-rosa1);
+  position: absolute;
+  top: 60px;
+  right: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-size: 1em;
+  text-align: start;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.075);
 }
 
-.hamburger-menu span {
-  width: 25px;
-  height: 3px;
-  background: var(--cor-marrom);
-  border-radius: 2px;
-  transition: all 0.3s ease;
+.menu a {
+  color: var(--cor-marrom);
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
 }
 
-.hamburger-menu.active span:nth-child(1) {
-  transform: rotate(45deg) translate(6px, 6px);
+.menu a:hover {
+  background-color: var(--azul);
+  color: var(--cinza-claro);
 }
 
-.hamburger-menu.active span:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger-menu.active span:nth-child(3) {
-  transform: rotate(-45deg) translate(7px, -7px);
+.menu.show {
+  display: flex;
 }
 
 /*HERO SECTION*/
@@ -126,7 +141,7 @@ header {
 
 .titulo-hero-section {
   font-family: var(--fonte-titulos);
-  z-index: 1000;
+  z-index: 10;
   color: var(--cor-marrom);
   font-size: 1.8em;
   margin: 20px;
@@ -134,16 +149,16 @@ header {
 
 .texto-hero-section {
   font-family: var(--fonte-texto);
-  z-index: 1000;
+  z-index: 9;
   color: var(--cor-marrom);
   font-size: 1em;
   margin: 0 20px 20px 20px;
 }
 
 .btn-cta-hero-section {
-  font-family: var(--fonte-texto);
+  font-family: 1em;
   display: inline;
-  z-index: 1000;
+  z-index: 8;
   color: var(--cor-marrom);
   background: var(--cor-dourada-deg);
   font-size: 80%;
@@ -158,6 +173,109 @@ header {
 }
 
 .btn-cta-hero-section:hover {
-    transform: scale(1.02);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.055); /* Sombra suave */
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.055); /* Sombra suave */
+}
+
+/* SEÇÃO BEM-VINDOS */
+
+.secao-inicial {
+  text-align: center;
+  margin: 20px 30px 10px 30px;
+}
+
+.text-bem-vindos {
+  color: var(--cor-marrom);
+}
+
+.text-secao-inicial {
+  color: var(--cor-marrom);
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.secao-inicial > img {
+  margin: 0px auto;
+}
+
+/* SEÇÃO BOLOS DESTAQUES */
+
+.sabores-destaques {
+  text-align: center;
+  padding: 10px 30px 30px 30px;
+  background-color: var(--cor-rosa2);
+}
+
+.text-bem-vindos {
+  color: var(--cor-marrom);
+}
+
+.text-secao-inicial {
+  color: var(--cor-marrom);
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.box-dos-bolos {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.bolos {
+  margin: 10px auto;
+  background-color: white;
+  padding-bottom: 20px;
+  border-radius: 8px;
+  height: auto;
+  width: 200px;
+  max-width: 80vw;
+  box-shadow: 2px 1px 20px rgba(0, 0, 0, 0.144);
+}
+
+.imagem-box-bolo {
+  background-image: url("../imagens/bolos/bolo1.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+  border-radius: 8px 8px 0 0;
+}
+
+.desc-box-bolo {
+  padding: 10px 20px 0px 20px;
+  text-align: center;
+}
+
+.nome-do-bolo {
+  font-family: var(--fonte-texto);
+  color: var(--cor-marrom);
+  font-size: var(--texto-pequeno);
+}
+
+.desc-box-bolo > a {
+  display: block;
+  color: var(--cor-marrom);
+  text-decoration: none;
+  background: var(--cor-dourada-deg);
+  padding: 5px 10px;
+  margin: 10px auto 0px auto;
+  max-width: 40vw;
+  border-radius: 8px;
+}
+
+
+@media (min-width: 768px) {
+  .menu {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    background: none;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
 }

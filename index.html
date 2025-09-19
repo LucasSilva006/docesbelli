@@ -14,24 +14,84 @@
   </head>
   <body>
     <header>
-      <div class="logo-header">
-        <img src="imagens/logo.webp" alt="Logo" class="img-logo-header" />
-        <span class="nome-logo-header">Doces Belli</span>
+      <div class="logo-inicial">
+        <img src="imagens/logo.webp" alt="Doces Belli" />
+        <h1 class="texto-logo">Doces Belli</h1>
       </div>
-
-      <div class="botao-menu-hamburguer">
-        <button class="hamburger-menu" onclick="toggleMenu(this)">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+        ☰
+      </button>
+      <nav class="menu" id="menu">
+        <a href="#imoveis-casas">Nossos Sabores</a>
+        <a href="#imoveis-terrenos">Contatos</a>
+      </nav>
     </header>
 
     <section class="hero-section">
-      <h1 class="titulo-hero-section">O sabor que encanta, a qualidade que conquista!</h1>
-      <p class="texto-hero-section">Criamos bolos e tortas que transformam momentos especiais em memórias inesquecíveis para sua família.</p>
+      <h1 class="titulo-hero-section">
+        O sabor que encanta, a qualidade que conquista!
+      </h1>
+      <p class="texto-hero-section">
+        Criamos bolos e tortas que transformam momentos especiais em memórias
+        inesquecíveis para sua família.
+      </p>
       <a href="#" class="btn-cta-hero-section">Faça Seu Pedido Agora</a>
+    </section>
+
+    <section class="secao-inicial">
+      <h2 class="text-bem-vindos">Bem-vindos à Doces Belli</h2>
+      <p class="text-secao-inicial">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod quo
+        eligendi sint amet beatae optio, impedit inventore unde molestias soluta
+        nihil alias maiores obcaecati ipsam iure est culpa voluptatibus
+        laboriosam!
+      </p>
+      <p class="text-secao-inicial">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas dicta
+        recusandae ea ducimus ratione quam ullam incidunt quod blanditiis,
+        labore quis neque a dolore adipisci. Nam libero accusantium quidem in.
+      </p>
+      <img
+        src="imagens/avatar/avatar-png.webp"
+        alt="Boneca da Doces Belli"
+        class="avatar-secao-inicial"
+        width="200vw"
+      />
+    </section>
+
+    <section class="sabores-destaques">
+      <h2 class="text-bem-vindos">Nossos sabores mais amados</h2>
+      <p class="text-secao-inicial">Lorem ipsum dolor sit, amet consectetur</p>
+      <div class="box-dos-bolos">
+        <div class="bolos">
+          <div class="imagem-box-bolo"></div>
+          <div class="desc-box-bolo">
+            <h3 class="nome-do-bolo">Bolo de Noiva Pernambucano</h3>
+            <a href="#" class="preco-link-contato">R$ 85,00</a>
+          </div>
+        </div>
+        <div class="bolos">
+          <div class="imagem-box-bolo"></div>
+          <div class="desc-box-bolo">
+            <h3 class="nome-do-bolo">Bolo de Noiva Pernambucano</h3>
+            <a href="#" class="preco-link-contato">R$ 85,00</a>
+          </div>
+        </div>
+        <div class="bolos">
+          <div class="imagem-box-bolo"></div>
+          <div class="desc-box-bolo">
+            <h3 class="nome-do-bolo">Bolo de Noiva Pernambucano</h3>
+            <a href="#" class="preco-link-contato">R$ 85,00</a>
+          </div>
+        </div>
+        <div class="bolos">
+          <div class="imagem-box-bolo"></div>
+          <div class="desc-box-bolo">
+            <h3 class="nome-do-bolo">Bolo de Noiva Pernambucano</h3>
+            <a href="#" class="preco-link-contato">R$ 85,00</a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <script src="javascript/main.js"></script>
