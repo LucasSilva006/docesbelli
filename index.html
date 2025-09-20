@@ -18,25 +18,7 @@
       type="image/x-icon"
     />
 
-    <!-- Conexões antecipadas (otimiza carregamento de fontes externas) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <!-- CSS: preload + carregamento não bloqueante -->
-    <link rel="preload" href="styles/style.css" as="style" />
-    <link
-      rel="stylesheet"
-      href="styles/style.css"
-      media="print"
-      onload="this.media='all'"
-    />
-    <noscript><link rel="stylesheet" href="styles/style.css" /></noscript>
-
-    <!-- Google Fonts com display=swap (sem preload manual de .woff2) -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=PT+Serif:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="styles/style.css">
   </head>
 
   <body>
@@ -88,6 +70,7 @@
         alt="Boneca da Doces Belli"
         class="avatar-secao-inicial"
         width="200vw"
+        fetchpriority="high"
       />
     </section>
 
