@@ -491,7 +491,6 @@ footer {
   column-gap: 40vw;
   flex-wrap: wrap;
   padding: 20px;
-  
 }
 
 .footer-col {
@@ -511,6 +510,8 @@ footer {
 
 .footer-col ul li {
   margin: 5px 0;
+  min-width: 48px;
+  /* Padding para aumentar área de toque */
 }
 
 .footer-col ul li a {

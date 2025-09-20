@@ -4,23 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Doces Belli</title>
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="shortcut icon"
-      href="imagens/icons/favicon_io/favicon.ico"
-      type="image/x-icon"
-    />
+
+    <!-- Descrição SEO -->
     <meta
       name="description"
       content="Doces Belli – Confeitaria em Caruaru especializada em bolos e tortas que transformam momentos especiais em memórias inesquecíveis. Peça já o seu!"
     />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="imagens/icons/favicon_io/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- Conexões antecipadas (otimiza fontes externas) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- CSS: carregamento rápido e não bloqueante -->
+    <link rel="preload" href="styles/style.css" as="style" />
+    <link
+      rel="stylesheet"
+      href="styles/style.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript><link rel="stylesheet" href="styles/style.css" /></noscript>
+
+    <!-- Pré-carregamento das fontes críticas -->
+    <link
+      rel="preload"
+      href="https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfecnFHGPc.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="https://fonts.gstatic.com/s/ptserif/v18/EJRVQgYoZZs2vCFuvAFWzr8.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <!-- Google Fonts com display=swap (evita bloqueio de renderização) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=PT+Serif:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
     <header>
       <div class="logo-inicial">
@@ -283,6 +317,7 @@
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
+          title="Localização da Doces Belli - Mapa interativo mostrando nossa confeitaria em Caruaru"
         ></iframe>
         <p class="text-iframe">
           Atendemos em toda a cidade de Caruaru Consulte disponibilidade para
@@ -295,7 +330,7 @@
       <div class="box-logo-final">
         <div class="box-logo-final-texto">
           <img src="imagens/logo.webp" alt="Doces Belli" />
-          <h4 class="texto-logo-final">Doces Belli</h4>
+          <h3 class="texto-logo-final">Doces Belli</h3>
         </div>
         <p class="subtexto-logo-final">
           O sabor que encanta, a qualidade que conquista!
