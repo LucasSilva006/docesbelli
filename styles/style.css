@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=PT+Serif:wght@400;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=PT+Serif:wght@400;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap");
 
 * {
   margin: 0;
@@ -133,7 +133,7 @@ header img {
 #hero-section {
   position: relative;
   height: auto;
-  min-height: 40vh;
+  min-height: 30vh;
   display: flex;
   flex-direction: column;
   background-image: url("../imagens/img-hero.webp");
@@ -208,7 +208,7 @@ header img {
   background-color: var(--cor-rosa1);
 }
 
-.text-bem-vindos {
+.text-nossos-destaques {
   color: var(--cor-marrom);
 }
 
@@ -295,7 +295,7 @@ header img {
 }
 
 .boxs-diferenciais {
-  margin: 20px 0;
+  margin: 20px 10px;
   background-color: var(--cor-rosa2);
   padding: 10px 0;
   border-radius: 8px;
@@ -316,7 +316,7 @@ header img {
 
 #passo-a-passo {
   background-color: var(--cor-rosa1);
-  padding: 10px 20px;
+  padding: 10px 30px;
   text-align: center;
 }
 
@@ -351,6 +351,10 @@ header img {
   font-family: var(--fonte-cursiva);
 }
 
+.text-desc-provas-reais {
+  margin: 0 30px;
+}
+
 .tit-avaliacao-provas-reais {
   font-family: var(--fonte-texto);
 }
@@ -368,7 +372,7 @@ header img {
 }
 
 .boxs-provas-reais {
-  margin: 20px 0;
+  margin: 20px 10px;
   background-color: var(--cor-rosa2);
   padding: 10px 0;
   border-radius: 8px;
@@ -510,7 +514,7 @@ footer {
   margin: 5px 0;
   min-width: 48px;
   /* Padding para aumentar área de toque */
-    padding: 5px 0px;
+  padding: 5px 0px;
 }
 
 .footer-col ul li a {
@@ -543,6 +547,20 @@ footer {
   font-size: 0.7em;
 }
 
+/* RESPONSIVIDADE 480px */
+
+@media (min-width: 480px) {
+  .text-bem-vindos,
+  .text-nossos-sabores,
+  .tit-contatos,
+  .tit-diferenciais,
+  .tit-passo-a-passo,
+  .tit-provas-reais,
+  .tit-localizacao {
+    font-size: var(--titulo-grande);
+  }
+}
+
 /* RESPONSIVIDADE 768px */
 
 @media (min-width: 768px) {
@@ -557,5 +575,66 @@ footer {
 
   .menu-toggle {
     display: none;
+  }
+
+  .text-nossos-destaques {
+    font-size: var(--titulo-grande);
+  }
+
+  .box-das-boxs-passo-a-passo {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .boxs-passo-a-passo {
+    width: 40vw;
+  }
+
+  .box-das-boxs-das-provas-reais {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .boxs-provas-reais {
+    width: 40vw;
+    margin: 20px auto;
+  }
+
+  .numero-contatos {
+    font-size: 1.3em;
+  }
+}
+
+@media (min-width: 1024px) {
+  #hero-section {
+    padding: 20px 10vw;
+  }
+  .text-secao-inicial {
+    margin: 20px 10vw;
+  }
+
+  .box-dos-bolos {
+    padding: 0px 7vw;
+  }
+
+  .box-das-boxs-diferenciais {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .boxs-diferenciais {
+    width: 25vw;
+  }
+
+  .box-das-boxs-passo-a-passo {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1280px) {
+  .bolos {
+    width: 30%;
   }
 }
