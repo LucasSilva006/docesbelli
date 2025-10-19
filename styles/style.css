@@ -204,7 +204,6 @@ header img {
 
 #sabores-destaques {
   text-align: center;
-  padding: 10px 30px 30px 30px;
   background-color: var(--cor-rosa1);
 }
 
@@ -469,7 +468,7 @@ footer {
 .box-logo-final-texto {
   align-items: center;
   margin: 20px auto 0px auto;
-  padding: 15px 20px 7px 20px;
+  padding: 25px 20px 20px 20px;
 }
 
 .texto-logo-final {
@@ -562,7 +561,7 @@ footer {
 
 /* RESPONSIVIDADE 768px */
 
-@media (min-width: 780px) {
+@media (min-width: 880px) {
   .menu {
     display: flex !important;
     position: static;

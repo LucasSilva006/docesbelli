@@ -35,5 +35,268 @@
 }
 
 .text-bem-vindos {
-    font-family: var(--fonte-titulos);
+  font-family: var(--fonte-titulos);
+}
+
+/* NAVEGAÇÃO DE CATEGORIAS - FIXA */
+
+.nav-categorias {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 15px 20px;
+  background-color: white;
+  position: sticky;
+  top: 66px;
+  z-index: 999;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.nav-categorias::-webkit-scrollbar {
+  display: none;
+}
+
+.btn-categoria {
+  flex-shrink: 0;
+  padding: 10px 20px;
+  background-color: var(--cor-rosa2);
+  color: var(--cor-marrom);
+  text-decoration: none;
+  border-radius: 20px;
+  font-family: var(--fonte-texto);
+  font-size: var(--texto-pequeno);
+  font-weight: var(--peso-medium);
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.btn-categoria:hover {
+  background: var(--cor-dourada-deg);
+  transform: translateY(-2px);
+}
+
+.btn-categoria.active {
+  background: var(--cor-dourada-deg);
+  font-weight: var(--peso-semi-bold);
+}
+
+/* SEÇÕES DE CATEGORIAS */
+
+.categoria-secao {
+  margin-bottom: 40px;
+  scroll-margin-top: 130px;
+}
+
+.titulo-categoria {
+  font-family: var(--fonte-texto);
+  font-size: var(--texto-grande);
+  font-weight: var(--peso-bold);
+  color: var(--cor-marrom);
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+
+/* SEÇÃO BOLOS DESTAQUES - LAYOUT GRID RESPONSIVO */
+
+#sabores-destaques {
+  text-align: center;
+  padding: 10px 20px 30px 20px;
+  background-color: var(--cor-rosa1);
+}
+
+.text-nossos-destaques {
+  color: var(--cor-marrom);
+}
+
+.text-secao-inicial {
+  color: var(--cor-marrom);
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.box-dos-bolos {
+  grid-template-columns: 1fr;
+  gap: 15px;
+  margin-top: 15px;
+  padding: 0 10px;
+}
+
+.bolos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  width: 100%;
+  box-shadow: 2px 1px 20px rgba(0, 0, 0, 0.144);
+}
+
+.info-bolo-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+.imagem-box-bolo {
+  flex-shrink: 0;
+}
+
+.imagem-box-bolo img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+
+.desc-box-bolo {
+  flex: 1;
+  text-align: center;
+  padding: 0;
+  min-width: 0;
+}
+
+.nome-do-bolo {
+  font-family: var(--fonte-texto);
+  color: var(--cor-marrom);
+  font-size: var(--texto-pequeno);
+  font-weight: var(--peso-semi-bold);
+  margin-bottom: 5px;
+}
+
+.desc-box-bolo p {
+  font-size: 0.75rem;
+  color: #666;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.desc-box-bolo > a {
+  display: none;
+}
+
+.preco-link-contato {
+  display: block;
+  color: var(--cor-marrom);
+  text-decoration: none;
+  background: var(--cor-dourada-deg);
+  padding: 10px 20px;
+  margin: 0 auto;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-family: var(--fonte-texto);
+  font-weight: var(--peso-semi-bold);
+  white-space: nowrap;
+  transition: transform 0.2s ease;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+}
+
+.preco-link-contato:hover {
+  transform: scale(1.05);
+}
+
+.btn-bolos-destaques {
+  display: block;
+  color: var(--cor-marrom);
+  text-decoration: none;
+  background: var(--cor-dourada-deg);
+  padding: 15px 10px;
+  margin: 30px auto 0px auto;
+  max-width: 80vw;
+  border-radius: 8px;
+  font-size: var(--texto-grande);
+  font-weight: var(--peso-semi-bold);
+  transition: transform 0.2s ease;
+}
+
+.btn-bolos-destaques:hover {
+  transform: scale(1.02);
+}
+
+/* RESPONSIVIDADE 480px - 2 CARDS POR LINHA */
+@media (min-width: 480px) {
+  .box-dos-bolos {
+    gap: 20px;
+  }
+
+  .info-bolo-wrapper {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .desc-box-bolo {
+    text-align: left;
+  }
+
+  .imagem-box-bolo img {
+    width: 90px;
+    height: 90px;
+  }
+  
+  .nome-do-bolo {
+    font-size: var(--texto-normal);
+  }
+  
+  .desc-box-bolo p {
+    font-size: 0.8rem;
+  }
+  
+  .preco-link-contato {
+    padding: 10px 20px;
+    font-size: 0.875rem;
+    align-items: flex-end;
+  }
+  
+  .btn-categoria {
+    font-size: var(--texto-normal);
+  }
+}
+
+/* RESPONSIVIDADE 768px */
+@media (min-width: 1000px) {
+  .info-bolo-wrapper {
+    gap: 15px;
+  }
+  
+  .imagem-box-bolo img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .nome-do-bolo {
+    font-size: var(--texto-medio);
+  }
+  
+  .nav-categorias {
+    justify-content: center;
+    gap: 12px;
+  }
+}
+
+/* RESPONSIVIDADE 1024px - 3 CARDS POR LINHA */
+@media (min-width: 1120px) {
+  #sabores-destaques {
+    padding: 10px 10vw 30px 10vw;
+  }
+  
+  .box-dos-bolos {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 0;
+  }
+  
+  .titulo-categoria {
+    padding-left: 0;
+  }
 }
