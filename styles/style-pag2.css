@@ -12,7 +12,7 @@
   --cor-dourada-deg: linear-gradient(90deg, #f1bd61, #f6d78a);
 
   /* Fontes */
-  --fonte-cursiva: "Great Vibes", cursive;
+  --fonte-cursiva: "Be Vietnam Pro", sans-serif;
   --fonte-texto: "Poppins", sans-serif;
   --fonte-titulos: "PT Serif", serif;
 
@@ -45,14 +45,14 @@
   gap: 8px;
   overflow-x: auto;
   padding: 15px 20px;
-  background-color: white;
   position: sticky;
-  top: 66px;
+  top: 64px;
   z-index: 999;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  background-color: var(--cor-rosa1);
+  border-bottom: #65433621 1px solid;
 }
 
 .nav-categorias::-webkit-scrollbar {
@@ -96,6 +96,7 @@
   font-weight: var(--peso-bold);
   color: var(--cor-marrom);
   margin-bottom: 15px;
+  text-align: start;
   padding-left: 20px;
 }
 
@@ -103,11 +104,12 @@
 
 #sabores-destaques {
   text-align: center;
-  padding: 10px 20px 30px 20px;
   background-color: var(--cor-rosa1);
+  padding: 0;
 }
 
 .text-nossos-destaques {
+  padding-top: 8px;
   color: var(--cor-marrom);
 }
 
@@ -213,11 +215,13 @@
   background: var(--cor-dourada-deg);
   padding: 15px 10px;
   margin: 30px auto 0px auto;
-  max-width: 80vw;
+  width: 80vw;
   border-radius: 8px;
   font-size: var(--texto-grande);
   font-weight: var(--peso-semi-bold);
   transition: transform 0.2s ease;
+  font-family: var(--fonte-texto);
+  max-width: 500px;
 }
 
 .btn-bolos-destaques:hover {
@@ -243,32 +247,39 @@
     width: 90px;
     height: 90px;
   }
-  
+
   .nome-do-bolo {
     font-size: var(--texto-normal);
   }
-  
+
   .desc-box-bolo p {
     font-size: 0.8rem;
   }
-  
+
   .preco-link-contato {
     padding: 10px 20px;
     font-size: 0.875rem;
     align-items: flex-end;
   }
-  
+
   .btn-categoria {
     font-size: var(--texto-normal);
   }
 }
 
-/* RESPONSIVIDADE 768px */
+@media (min-width: 880px) {
+  .nav-categorias {
+    justify-content: center;
+    gap: 12px;
+  }
+}
+
+/* RESPONSIVIDADE 1000px */
 @media (min-width: 1000px) {
   .info-bolo-wrapper {
     gap: 15px;
   }
-  
+
   .imagem-box-bolo img {
     width: 100px;
     height: 100px;
@@ -277,11 +288,7 @@
   .nome-do-bolo {
     font-size: var(--texto-medio);
   }
-  
-  .nav-categorias {
-    justify-content: center;
-    gap: 12px;
-  }
+
 }
 
 /* RESPONSIVIDADE 1024px - 3 CARDS POR LINHA */
@@ -289,13 +296,13 @@
   #sabores-destaques {
     padding: 10px 10vw 30px 10vw;
   }
-  
+
   .box-dos-bolos {
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
     padding: 0;
   }
-  
+
   .titulo-categoria {
     padding-left: 0;
   }

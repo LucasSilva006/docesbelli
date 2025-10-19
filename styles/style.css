@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=PT+Serif:wght@400;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +20,7 @@ html {
   --cor-dourada-deg: linear-gradient(90deg, #f1bd61, #f6d78a);
 
   /* Fontes */
-  --fonte-cursiva: "Great Vibes", cursive;
+  --fonte-cursiva: "Be Vietnam Pro", sans-serif;
   --fonte-texto: "Poppins", sans-serif;
   --fonte-titulos: "PT Serif", serif;
 
@@ -28,12 +30,12 @@ html {
   --peso-bold: 700;
 
   /* Tamanhos de fonte */
-  --texto-pequeno: 0.875rem; /* 14px */
-  --texto-medio: 1.125rem; /* 18px */
-  --texto-grande: 1.25rem; /* 20px */
-  --titulo-medio: 1.8rem; /* 32px */
-  --titulo-grande: 2.5rem; /* 40px */
-  --titulo-hero: 3rem; /* 48px */
+  --texto-pequeno: 0.75rem; /* 12px */
+  --texto-medio: 1rem; /* 16px */
+  --texto-grande: 1.125rem; /* 18px */
+  --titulo-medio: 1.5rem; /* 24px */
+  --titulo-grande: 2rem; /* 32px */
+  --titulo-hero: 2.5rem; /* 40px */
 }
 
 h1 {
@@ -44,7 +46,6 @@ h1 {
 h2 {
   font-family: var(--fonte-cursiva);
   font-weight: var(--peso-semi-bold);
-  font-size: var(--titulo-medio);
 }
 
 p {
@@ -99,7 +100,7 @@ header img {
 .menu {
   display: none;
   flex-direction: column;
-  gap: 0.4rem;
+  gap: 2.5rem;
   background: var(--cor-rosa1);
   position: absolute;
   top: 60px;
@@ -117,6 +118,7 @@ header img {
   padding: 8px 12px;
   border-radius: 4px;
   transition: background-color 0.3s ease;
+  font-family: var(--fonte-texto);
 }
 
 .menu a:hover {
@@ -171,6 +173,8 @@ header img {
   border-radius: 8px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
+  font-family: var(--fonte-texto);
+  font-weight: var(--peso-semi-bold);
 }
 
 .btn-cta-hero-section:hover {
@@ -205,6 +209,7 @@ header img {
 #sabores-destaques {
   text-align: center;
   background-color: var(--cor-rosa1);
+  padding: 10px 20px;
 }
 
 .text-nossos-destaques {
@@ -218,18 +223,18 @@ header img {
 }
 
 .box-dos-bolos {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(70%, 1fr));
+  gap: 20px;
+  margin: 0 auto;
 }
 
 .bolos {
-  margin: 5px auto;
+  margin: 0 auto;
   background-color: white;
   padding-bottom: 20px;
   border-radius: 8px;
   height: auto;
-  width: 180px;
   max-width: 80vw;
   box-shadow: 2px 1px 20px rgba(0, 0, 0, 0.144);
 }
@@ -262,6 +267,7 @@ header img {
   margin: 10px auto 0px auto;
   max-width: 40vw;
   border-radius: 8px;
+  font-family: var(--fonte-texto);
 }
 
 .preco-link-contato {
@@ -277,7 +283,9 @@ header img {
   margin: 15px auto 0px auto;
   max-width: 80vw;
   border-radius: 8px;
-  font-size: var(--texto-grande);
+  font-size: var(--texto-pequeno);
+  font-family: var(--fonte-texto);
+  font-weight: var(--peso-semi-bold);
 }
 
 /* DIFERENCIAIS */
@@ -300,12 +308,16 @@ header img {
   color: var(--cor-marrom);
 }
 
+.boxs-diferenciais p {
+  margin: 0 15px;
+}
+
 .boxs-diferenciais img {
   width: 30px;
 }
 
 .tit-diferencial {
-  margin: 8px 0;
+  margin: 8px 15px;
   font-family: var(--fonte-texto);
   font-weight: var(--peso-bold);
 }
@@ -378,7 +390,7 @@ header img {
 }
 
 .boxs-provas-reais img {
-  width: 25vw;
+  width: 5rem;
 }
 
 /* CONTATOS */
@@ -415,6 +427,7 @@ header img {
   max-width: 70vw;
   border-radius: 8px;
   font-size: var(--texto-medio);
+  font-family: var(--fonte-texto);
 }
 
 /* LOCALIZAÇÃO */
@@ -428,6 +441,21 @@ header img {
   color: var(--cor-marrom);
 }
 
+.box-text-nome-da-rua {
+  display: flex;
+  margin: 0 15vw;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-text-nome-da-rua img {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+}
+
 .text-nome-da-rua {
   display: flex;
   margin: 10px 20px;
@@ -435,6 +463,7 @@ header img {
   column-gap: 20px;
   align-items: center;
   color: var(--cor-marrom);
+  font-size: 0.85em;
 }
 
 .text-nome-da-rua img {
@@ -451,6 +480,34 @@ iframe {
   margin-top: 20px;
   color: #333;
   font-size: 0.7em;
+}
+
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-float img {
+  width: 35px;
+  height: 35px;
 }
 
 /* FOOTER */
@@ -557,6 +614,10 @@ footer {
   .tit-localizacao {
     font-size: var(--titulo-grande);
   }
+
+  .box-dos-bolos {
+    grid-template-columns: repeat(auto-fit, minmax(23%, 1fr));
+  }
 }
 
 /* RESPONSIVIDADE 768px */
@@ -581,7 +642,6 @@ footer {
 
   .bolos {
     flex: 0 0 calc(33.333% - 20px); /* 3 por linha */
-    max-width: calc(33.333% - 20px);
     box-sizing: border-box;
   }
 
@@ -599,12 +659,13 @@ footer {
   }
 
   .box-das-boxs-das-provas-reais {
-    display: flex;
+    display: grid;
     flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(22%, 1fr));
   }
 
   .boxs-provas-reais {
-    width: 40vw;
+    width: 20vw;
     margin: 20px auto;
   }
 
@@ -643,8 +704,7 @@ footer {
 }
 
 @media (min-width: 1280px) {
-  .bolos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  .box-dos-bolos {
+    grid-template-columns: repeat(auto-fit, minmax(15%, 1fr));
   }
 }
