@@ -75,6 +75,11 @@ header img {
 
 .texto-logo {
   font-size: var(--texto-grande);
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: bold;
+  line-height: 1;
+  color: var(--bs-heading-color);
 }
 
 .logo-inicial {
@@ -100,7 +105,7 @@ header img {
 .menu {
   display: none;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 1em;
   background: var(--cor-rosa1);
   position: absolute;
   top: 60px;
@@ -149,6 +154,7 @@ header img {
   color: var(--cor-marrom);
   font-size: 1.8em;
   margin: 20px;
+  font-weight: var(--peso-bold);
 }
 
 .texto-hero-section {
@@ -187,6 +193,7 @@ header img {
 #secao-inicial {
   text-align: center;
   margin: 20px 30px 10px 30px;
+  scroll-margin-top: 85px;
 }
 
 .text-bem-vindos {
@@ -210,6 +217,7 @@ header img {
   text-align: center;
   background-color: var(--cor-rosa1);
   padding: 10px 20px;
+  scroll-margin-top: 55px;
 }
 
 .text-nossos-destaques {
@@ -283,7 +291,7 @@ header img {
   margin: 15px auto 0px auto;
   max-width: 80vw;
   border-radius: 8px;
-  font-size: var(--texto-pequeno);
+  font-size: var(--texto-medio);
   font-family: var(--fonte-texto);
   font-weight: var(--peso-semi-bold);
 }
@@ -293,6 +301,7 @@ header img {
 #diferenciais {
   text-align: center;
   padding: 10px 30px;
+  scroll-margin-top: 55px;
 }
 
 .tit-diferenciais {
@@ -320,6 +329,28 @@ header img {
   margin: 8px 15px;
   font-family: var(--fonte-texto);
   font-weight: var(--peso-bold);
+  font-size: var(--texto-grande);
+}
+
+/* CARROSSEL */
+
+.carousel-inner {
+  margin: 0 auto;
+  width: 90vw;
+  max-width: 600px;
+  height: 270px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#galeria {
+  text-align: center;
+}
+
+#galeria h2 {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  color: var(--cor-marrom);
 }
 
 /* PASSO A PASSO */
@@ -354,6 +385,7 @@ header img {
 #provas-reais {
   padding: 10px 20px;
   text-align: center;
+  scroll-margin-top: 55px;
 }
 
 .tit-provas-reais {
@@ -367,6 +399,7 @@ header img {
 
 .tit-avaliacao-provas-reais {
   font-family: var(--fonte-texto);
+  margin-top: 10px;
 }
 
 .text-provas-reais {
@@ -428,6 +461,7 @@ header img {
   border-radius: 8px;
   font-size: var(--texto-medio);
   font-family: var(--fonte-texto);
+  font-weight: var(--peso-bold);
 }
 
 /* LOCALIZAÇÃO */
@@ -435,6 +469,7 @@ header img {
 #localizacao {
   padding: 10px 20px;
   text-align: center;
+  scroll-margin-top: 55px;
 }
 
 .tit-localizacao {
@@ -525,12 +560,13 @@ footer {
 .box-logo-final-texto {
   align-items: center;
   margin: 20px auto 0px auto;
-  padding: 25px 20px 20px 20px;
+  padding: 25px 20px 5px 20px;
 }
 
 .texto-logo-final {
   font-family: var(--fonte-titulos);
   font-size: var(--texto-grande);
+  margin-top: 5px;
 }
 
 .subtexto-logo-final {
@@ -543,15 +579,29 @@ footer {
   border-radius: 100%;
 }
 
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+}
+
 .footer-container {
   display: flex;
   column-gap: 40vw;
   flex-wrap: wrap;
-  padding: 20px;
+  padding-top: 20px;
+  text-align: center;
 }
 
 .footer-col {
   margin-bottom: 40px;
+  margin: 0 auto;
 }
 
 .footer-col h3 {
@@ -566,7 +616,7 @@ footer {
 }
 
 .footer-col ul li {
-  margin: 5px 0;
+  margin: 3px 0;
   min-width: 48px;
   /* Padding para aumentar área de toque */
   padding: 5px 0px;
@@ -574,7 +624,7 @@ footer {
 
 .footer-col ul li a {
   text-decoration: none;
-  color: #fff;
+  color: rgb(223, 223, 223);
   font-size: 14px;
 }
 

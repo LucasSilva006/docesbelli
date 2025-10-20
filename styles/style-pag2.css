@@ -111,6 +111,7 @@
 .text-nossos-destaques {
   padding-top: 8px;
   color: var(--cor-marrom);
+  margin: 0 10px;
 }
 
 .text-secao-inicial {
