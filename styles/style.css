@@ -16,8 +16,9 @@ html {
   /* Cores */
   --cor-rosa1: #fdf4f7;
   --cor-rosa2: #f9d7d8;
-  --cor-marrom: #654336;
-  --cor-dourada-deg: linear-gradient(90deg, #f1bd61, #f6d78a);
+  --cor-marrom: #4A3829;
+  --cor-dourada: #C9A961;
+  --cor-dourada-escura: #bb9e5c;
 
   /* Fontes */
   --fonte-cursiva: "Be Vietnam Pro", sans-serif;
@@ -140,18 +141,45 @@ header img {
 #hero-section {
   position: relative;
   height: auto;
-  min-height: 30vh;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
-  background-image: url("../imagens/img-hero.webp");
+  background-image: url("../imagens/bolos/nova-img-hero.webp");
   background-size: cover;
-  background-position: center center;
+  background-position: top center;
+  justify-content: flex-end;
+  align-items: flex-start;
+  overflow: hidden; /* ADICIONADO */
+}
+
+/* NOVO: Gradiente de fade para contraste */
+#hero-section::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 70%;
+  background: linear-gradient(
+    to top,
+    rgb(36, 22, 2) 0%,
+    rgba(27, 16, 1, 0.678) 40%,
+    transparent 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* NOVO: Garante que o conteúdo fique acima do overlay */
+#hero-section > * {
+  position: relative;
+  z-index: 2;
 }
 
 .titulo-hero-section {
   font-family: var(--fonte-titulos);
   z-index: 10;
-  color: var(--cor-marrom);
+  color: var(--cor-rosa1);
   font-size: 1.8em;
   margin: 20px;
   font-weight: var(--peso-bold);
@@ -160,7 +188,7 @@ header img {
 .texto-hero-section {
   font-family: var(--fonte-texto);
   z-index: 9;
-  color: var(--cor-marrom);
+  color: var(--cor-rosa1);
   font-size: 1em;
   margin: 0 20px 20px 20px;
 }
@@ -169,8 +197,8 @@ header img {
   font-size: 1em;
   display: inline;
   z-index: 8;
-  color: var(--cor-marrom);
-  background: var(--cor-dourada-deg);
+  color: var(--cor-rosa1);
+  background: var(--cor-dourada);
   margin: 0 20px 20px 20px;
   padding: 10px 15px;
   width: 80vw;
@@ -180,12 +208,14 @@ header img {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   font-family: var(--fonte-texto);
-  font-weight: var(--peso-semi-bold);
 }
+
+
 
 .btn-cta-hero-section:hover {
   transform: scale(1.02);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.055); /* Sombra suave */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.055);
+  background: var(--cor-dourada-escura);
 }
 
 /* SEÇÃO BEM-VINDOS */
@@ -268,9 +298,9 @@ header img {
 
 .desc-box-bolo > a {
   display: block;
-  color: var(--cor-marrom);
+  color: var(--cor-rosa1);
   text-decoration: none;
-  background: var(--cor-dourada-deg);
+  background: var(--cor-dourada);
   padding: 5px 10px;
   margin: 10px auto 0px auto;
   max-width: 40vw;
@@ -278,22 +308,32 @@ header img {
   font-family: var(--fonte-texto);
 }
 
-.preco-link-contato {
-  font-weight: var(--peso-bold);
+.desc-box-bolo > a:hover {
+  transition: all 0.3s ease;
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.055);
+  background: var(--cor-dourada-escura);
 }
+
 
 .btn-bolos-destaques {
   display: block;
-  color: var(--cor-marrom);
+  color: var(--cor-rosa1);
   text-decoration: none;
-  background: var(--cor-dourada-deg);
+  background: var(--cor-dourada);
   padding: 15px 10px;
   margin: 15px auto 0px auto;
   max-width: 80vw;
   border-radius: 8px;
   font-size: var(--texto-medio);
   font-family: var(--fonte-texto);
-  font-weight: var(--peso-semi-bold);
+}
+
+.btn-bolos-destaques:hover {
+  transition: all 0.3s ease;
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.055);
+  background: var(--cor-dourada-escura);
 }
 
 /* DIFERENCIAIS */
@@ -452,16 +492,22 @@ header img {
 
 .btn-contatos {
   display: block;
-  color: var(--cor-marrom);
+  color: var(--cor-rosa1);
   text-decoration: none;
-  background: var(--cor-dourada-deg);
+  background: var(--cor-dourada);
   padding: 15px 10px;
   margin: 15px auto 0px auto;
   max-width: 70vw;
   border-radius: 8px;
   font-size: var(--texto-medio);
   font-family: var(--fonte-texto);
-  font-weight: var(--peso-bold);
+}
+
+.btn-contatos:hover {
+  transition: all 0.3s ease;
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.055);
+  background: var(--cor-dourada-escura);
 }
 
 /* LOCALIZAÇÃO */
@@ -727,6 +773,7 @@ footer {
 @media (min-width: 1024px) {
   #hero-section {
     padding: 20px 10vw;
+    min-height: 60vh;
   }
   .text-secao-inicial {
     margin: 20px 10vw;
