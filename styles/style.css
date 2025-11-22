@@ -16,8 +16,8 @@ html {
   /* Cores */
   --cor-rosa1: #fdf4f7;
   --cor-rosa2: #f9d7d8;
-  --cor-marrom: #4A3829;
-  --cor-dourada: #C9A961;
+  --cor-marrom: #4a3829;
+  --cor-dourada: #c9a961;
   --cor-dourada-escura: #bb9e5c;
 
   /* Fontes */
@@ -154,7 +154,7 @@ header img {
 
 /* NOVO: Gradiente de fade para contraste */
 #hero-section::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -209,8 +209,6 @@ header img {
   cursor: pointer;
   font-family: var(--fonte-texto);
 }
-
-
 
 .btn-cta-hero-section:hover {
   transform: scale(1.02);
@@ -314,7 +312,6 @@ header img {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.055);
   background: var(--cor-dourada-escura);
 }
-
 
 .btn-bolos-destaques {
   display: block;
@@ -561,6 +558,50 @@ iframe {
   margin-top: 20px;
   color: #333;
   font-size: 0.7em;
+}
+
+.cart-link {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 100px;
+  right: 20px;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+  transition: transform 0.2s ease-in-out;
+}
+
+.cart-link img {
+  max-width: 35px;
+  max-height: 35px;
+}
+
+.cart-count {
+  position: absolute;
+  left: 40px;
+  background: #ec4899;
+  color: #fff;
+  border-radius: 999px;
+  padding: 6px 8px;
+  font-size: 0.8rem;
+  line-height: 1;
+  bottom: 40px;
+}
+
+.cart-link:hover {
+  transform: scale(1.1);
 }
 
 .whatsapp-float {

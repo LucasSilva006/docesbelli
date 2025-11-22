@@ -97,7 +97,7 @@
   color: var(--cor-marrom);
   margin-bottom: 15px;
   text-align: start;
-  padding-left: 20px;
+  padding-left: 10vw;
 }
 
 /* SEÇÃO BOLOS DESTAQUES - LAYOUT GRID RESPONSIVO */
@@ -132,12 +132,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
+  gap: 21px;
   background-color: white;
   padding: 15px;
   border-radius: 8px;
   width: 100%;
   box-shadow: 2px 1px 20px rgba(0, 0, 0, 0.144);
+  justify-content: space-between;
 }
 
 .info-bolo-wrapper {

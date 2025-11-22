@@ -31,6 +31,7 @@
       <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
         ☰
       </button>
+      
       <nav class="menu" id="menu">
         <a href="../index.html">Home</a>
         <a href="#nossos-bolos">Nossos Sabores</a>
@@ -63,10 +64,19 @@
               </div>
               <div class="desc-box-bolo">
                 <h3 class="nome-do-bolo">Bolo de Noiva Pernambucano</h3>
-                <p>Bolo de x com recheio de y</p>
+                <p>
+                  Massa branca fofinha com recheio de goiabada e coco ralado,
+                  tradicional receita pernambucana
+                </p>
+                <p><strong>R$ 89,99</strong></p>
               </div>
             </div>
-            <a href="#" class="preco-link-contato">Adicionar ao carrinho</a>
+            <a
+              href="#"
+              class="preco-link-contato"
+              onclick="adicionarAoCarrinho(1, 'Bolo de Noiva Pernambucano', 'Massa branca fofinha com recheio de goiabada e coco ralado, tradicional receita pernambucana', 89.99, '../imagens/bolos/bolo1.webp'); return false;"
+              >Adicionar ao carrinho</a
+            >
           </div>
 
           <div class="bolos">
@@ -76,10 +86,19 @@
               </div>
               <div class="desc-box-bolo">
                 <h3 class="nome-do-bolo">Bolo de Coco</h3>
-                <p>Bolo de coco com recheio cremoso</p>
+                <p>
+                  Massa aerada de coco com recheio cremoso de leite condensado e
+                  coco ralado
+                </p>
+                <p><strong>R$ 79,99</strong></p>
               </div>
             </div>
-            <a href="#" class="preco-link-contato">Adicionar ao carrinho</a>
+            <a
+              href="#"
+              class="preco-link-contato"
+              onclick="adicionarAoCarrinho(2, 'Bolo de Coco', 'Massa aerada de coco com recheio cremoso de leite condensado e coco ralado', 79.99, '../imagens/bolos/bolo1.webp'); return false;"
+              >Adicionar ao carrinho</a
+            >
           </div>
 
           <div class="bolos">
@@ -89,10 +108,19 @@
               </div>
               <div class="desc-box-bolo">
                 <h3 class="nome-do-bolo">Bolo de Milho</h3>
-                <p>Bolo de milho verde tradicional</p>
+                <p>
+                  Bolo de milho verde tradicional, úmido e saboroso, perfeito
+                  para o café da tarde
+                </p>
+                <p><strong>R$ 69,99</strong></p>
               </div>
             </div>
-            <a href="#" class="preco-link-contato">Adicionar ao carrinho</a>
+            <a
+              href="#"
+              class="preco-link-contato"
+              onclick="adicionarAoCarrinho(3, 'Bolo de Milho', 'Bolo de milho verde tradicional, úmido e saboroso, perfeito para o café da tarde', 69.99, '../imagens/bolos/bolo1.webp'); return false;"
+              >Adicionar ao carrinho</a
+            >
           </div>
         </div>
       </div>
@@ -111,10 +139,19 @@
               </div>
               <div class="desc-box-bolo">
                 <h3 class="nome-do-bolo">Bolo de Chocolate</h3>
-                <p>Bolo de chocolate com ganache</p>
+                <p>
+                  Massa de chocolate intenso com recheio e cobertura de ganache
+                  belga
+                </p>
+                <p><strong>R$ 89,99</strong></p>
               </div>
             </div>
-            <a href="#" class="preco-link-contato">Adicionar ao carrinho</a>
+            <a
+              href="#"
+              class="preco-link-contato"
+              onclick="adicionarAoCarrinho(4, 'Bolo de Chocolate', 'Massa de chocolate intenso com recheio e cobertura de ganache belga', 89.99, '../imagens/bolos/bolo1.webp'); return false;"
+              >Adicionar ao carrinho</a
+            >
           </div>
 
           <div class="bolos">
@@ -124,10 +161,19 @@
               </div>
               <div class="desc-box-bolo">
                 <h3 class="nome-do-bolo">Bolo de Cenoura</h3>
-                <p>Bolo de cenoura com cobertura de chocolate</p>
+                <p>
+                  Massa fofinha de cenoura com generosa cobertura de brigadeiro
+                  cremoso
+                </p>
+                <p><strong>R$ 74,99</strong></p>
               </div>
             </div>
-            <a href="#" class="preco-link-contato">Adicionar ao carrinho</a>
+            <a
+              href="#"
+              class="preco-link-contato"
+              onclick="adicionarAoCarrinho(5, 'Bolo de Cenoura', 'Massa fofinha de cenoura com generosa cobertura de brigadeiro cremoso', 74.99, '../imagens/bolos/bolo1.webp'); return false;"
+              >Adicionar ao carrinho</a
+            >
           </div>
 
           <div class="bolos">
@@ -137,10 +183,19 @@
               </div>
               <div class="desc-box-bolo">
                 <h3 class="nome-do-bolo">Bolo de Laranja</h3>
-                <p>Bolo de laranja com calda especial</p>
+                <p>
+                  Massa cítrica e úmida de laranja com calda especial de laranja
+                  caramelizada
+                </p>
+                <p><strong>R$ 79,99</strong></p>
               </div>
             </div>
-            <a href="#" class="preco-link-contato">Adicionar ao carrinho</a>
+            <a
+              href="#"
+              class="preco-link-contato"
+              onclick="adicionarAoCarrinho(6, 'Bolo de Laranja', 'Massa cítrica e úmida de laranja com calda especial de laranja caramelizada', 79.99, '../imagens/bolos/bolo1.webp'); return false;"
+              >Adicionar ao carrinho</a
+            >
           </div>
         </div>
       </div>
@@ -156,10 +211,19 @@
               </div>
               <div class="desc-box-bolo">
                 <h3 class="nome-do-bolo">Bolo Formigueiro</h3>
-                <p>Bolo com pedaços de chocolate</p>
+                <p>
+                  Massa branca com generosos pedaços de chocolate meio amargo
+                  distribuídos por toda massa
+                </p>
+                <p><strong>R$ 79,99</strong></p>
               </div>
             </div>
-            <a href="#" class="preco-link-contato">Adicionar ao carrinho</a>
+            <a
+              href="#"
+              class="preco-link-contato"
+              onclick="adicionarAoCarrinho(7, 'Bolo Formigueiro', 'Massa branca com generosos pedaços de chocolate meio amargo distribuídos por toda massa', 79.99, '../imagens/bolos/bolo1.webp'); return false;"
+              >Adicionar ao carrinho</a
+            >
           </div>
 
           <div class="bolos">
@@ -169,10 +233,18 @@
               </div>
               <div class="desc-box-bolo">
                 <h3 class="nome-do-bolo">Bolo de Fubá</h3>
-                <p>Bolo de fubá cremoso tradicional</p>
+                <p>
+                  Bolo de fubá cremoso tradicional, úmido com toque de erva-doce
+                </p>
+                <p><strong>R$ 69,99</strong></p>
               </div>
             </div>
-            <a href="#" class="preco-link-contato">Adicionar ao carrinho</a>
+            <a
+              href="#"
+              class="preco-link-contato"
+              onclick="adicionarAoCarrinho(8, 'Bolo de Fubá', 'Bolo de fubá cremoso tradicional, úmido com toque de erva-doce', 69.99, '../imagens/bolos/bolo1.webp'); return false;"
+              >Adicionar ao carrinho</a
+            >
           </div>
 
           <div class="bolos">
@@ -182,10 +254,19 @@
               </div>
               <div class="desc-box-bolo">
                 <h3 class="nome-do-bolo">Bolo de Banana</h3>
-                <p>Bolo de banana com canela</p>
+                <p>
+                  Massa úmida de banana prata com canela e toque de mel,
+                  decorado com rodelas de banana
+                </p>
+                <p><strong>R$ 74,99</strong></p>
               </div>
             </div>
-            <a href="#" class="preco-link-contato">Adicionar ao carrinho</a>
+            <a
+              href="#"
+              class="preco-link-contato"
+              onclick="adicionarAoCarrinho(9, 'Bolo de Banana', 'Massa úmida de banana prata com canela e toque de mel, decorado com rodelas de banana', 74.99, '../imagens/bolos/bolo1.webp'); return false;"
+              >Adicionar ao carrinho</a
+            >
           </div>
         </div>
       </div>
@@ -201,10 +282,19 @@
               </div>
               <div class="desc-box-bolo">
                 <h3 class="nome-do-bolo">Bolo Prestígio</h3>
-                <p>Bolo de chocolate com coco</p>
+                <p>
+                  Massa de chocolate com recheio cremoso de coco e cobertura de
+                  chocolate meio amargo
+                </p>
+                <p><strong>R$ 89,99</strong></p>
               </div>
             </div>
-            <a href="#" class="preco-link-contato">Adicionar ao carrinho</a>
+            <a
+              href="#"
+              class="preco-link-contato"
+              onclick="adicionarAoCarrinho(10, 'Bolo Prestígio', 'Massa de chocolate com recheio cremoso de coco e cobertura de chocolate meio amargo', 89.99, '../imagens/bolos/bolo1.webp'); return false;"
+              >Adicionar ao carrinho</a
+            >
           </div>
 
           <div class="bolos">
@@ -214,10 +304,19 @@
               </div>
               <div class="desc-box-bolo">
                 <h3 class="nome-do-bolo">Bolo Red Velvet</h3>
-                <p>Bolo red velvet com cream cheese</p>
+                <p>
+                  Massa vermelha aveludada com recheio e cobertura de cream
+                  cheese levemente adocicado
+                </p>
+                <p><strong>R$ 94,99</strong></p>
               </div>
             </div>
-            <a href="#" class="preco-link-contato">Adicionar ao carrinho</a>
+            <a
+              href="#"
+              class="preco-link-contato"
+              onclick="adicionarAoCarrinho(11, 'Bolo Red Velvet', 'Massa vermelha aveludada com recheio e cobertura de cream cheese levemente adocicado', 94.99, '../imagens/bolos/bolo1.webp'); return false;"
+              >Adicionar ao carrinho</a
+            >
           </div>
 
           <div class="bolos">
@@ -227,18 +326,29 @@
               </div>
               <div class="desc-box-bolo">
                 <h3 class="nome-do-bolo">Bolo de Limão</h3>
-                <p>Bolo de limão com cobertura meringue</p>
+                <p>
+                  Massa refrescante de limão siciliano com recheio cremoso e
+                  cobertura de merengue italiano
+                </p>
+                <p><strong>R$ 84,99</strong></p>
               </div>
             </div>
-            <a href="#" class="preco-link-contato">Adicionar ao carrinho</a>
+            <a
+              href="#"
+              class="preco-link-contato"
+              onclick="adicionarAoCarrinho(12, 'Bolo de Limão', 'Massa refrescante de limão siciliano com recheio cremoso e cobertura de merengue italiano', 84.99, '../imagens/bolos/bolo1.webp'); return false;"
+              >Adicionar ao carrinho</a
+            >
           </div>
         </div>
       </div>
 
       <!-- Botão Ver Todos os Bolos -->
-      <a href="#" class="btn-bolos-destaques">Ver todos os bolos</a>
     </section>
 
+    <a href="pag-carrinho.html" id="cart-link" class="cart-link" aria-label="Ver carrinho"><img src="/imagens/icons/icon-carrinho.png" alt="Carrinho">
+        <p id="cart-count" class="cart-count">0</p>
+    </a>
     <a
       href="https://wa.me/5581999647354?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Doces%20Belli%20e%20gostaria%20de%20fazer%20uma%20encomenda%20%F0%9F%8E%82"
       class="whatsapp-float"
@@ -306,6 +416,7 @@
       </div>
     </footer>
 
+    <script src="../javascript/main-bolos.js"></script>
     <script src="../javascript/main.js"></script>
   </body>
 </html>

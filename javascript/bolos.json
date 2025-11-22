@@ -1,0 +1,124 @@
+{
+  "categorias": [
+    {
+      "id": "tradicional",
+      "nome": "Tradicional",
+      "bolos": [
+        {
+          "id": 1,
+          "nome": "Bolo de Noiva Pernambucano",
+          "descricao": "Massa branca fofinha com recheio de goiabada e coco ralado, tradicional receita pernambucana",
+          "preco": 89.99,
+          "categoria": "tradicional",
+          "imagem": "../imagens/bolos/bolo1.webp"
+        },
+        {
+          "id": 2,
+          "nome": "Bolo de Coco",
+          "descricao": "Massa aerada de coco com recheio cremoso de leite condensado e coco ralado",
+          "preco": 79.99,
+          "categoria": "tradicional",
+          "imagem": "../imagens/bolos/bolo1.webp"
+        },
+        {
+          "id": 3,
+          "nome": "Bolo de Milho",
+          "descricao": "Bolo de milho verde tradicional, úmido e saboroso, perfeito para o café da tarde",
+          "preco": 69.99,
+          "categoria": "tradicional",
+          "imagem": "../imagens/bolos/bolo1.webp"
+        }
+      ]
+    },
+    {
+      "id": "tradicional-2",
+      "nome": "Tradicional 2",
+      "bolos": [
+        {
+          "id": 4,
+          "nome": "Bolo de Chocolate",
+          "descricao": "Massa de chocolate intenso com recheio e cobertura de ganache belga",
+          "preco": 89.99,
+          "categoria": "tradicional-2",
+          "imagem": "../imagens/bolos/bolo1.webp"
+        },
+        {
+          "id": 5,
+          "nome": "Bolo de Cenoura",
+          "descricao": "Massa fofinha de cenoura com generosa cobertura de brigadeiro cremoso",
+          "preco": 74.99,
+          "categoria": "tradicional-2",
+          "imagem": "../imagens/bolos/bolo1.webp"
+        },
+        {
+          "id": 6,
+          "nome": "Bolo de Laranja",
+          "descricao": "Massa cítrica e úmida de laranja com calda especial de laranja caramelizada",
+          "preco": 79.99,
+          "categoria": "tradicional-2",
+          "imagem": "../imagens/bolos/bolo1.webp"
+        }
+      ]
+    },
+    {
+      "id": "tradicional-3",
+      "nome": "Tradicional 3",
+      "bolos": [
+        {
+          "id": 7,
+          "nome": "Bolo Formigueiro",
+          "descricao": "Massa branca com generosos pedaços de chocolate meio amargo distribuídos por toda massa",
+          "preco": 79.99,
+          "categoria": "tradicional-3",
+          "imagem": "../imagens/bolos/bolo1.webp"
+        },
+        {
+          "id": 8,
+          "nome": "Bolo de Fubá",
+          "descricao": "Bolo de fubá cremoso tradicional, úmido com toque de erva-doce",
+          "preco": 69.99,
+          "categoria": "tradicional-3",
+          "imagem": "../imagens/bolos/bolo1.webp"
+        },
+        {
+          "id": 9,
+          "nome": "Bolo de Banana",
+          "descricao": "Massa úmida de banana prata com canela e toque de mel, decorado com rodelas de banana",
+          "preco": 74.99,
+          "categoria": "tradicional-3",
+          "imagem": "../imagens/bolos/bolo1.webp"
+        }
+      ]
+    },
+    {
+      "id": "tradicional-4",
+      "nome": "Tradicional 4",
+      "bolos": [
+        {
+          "id": 10,
+          "nome": "Bolo Prestígio",
+          "descricao": "Massa de chocolate com recheio cremoso de coco e cobertura de chocolate meio amargo",
+          "preco": 89.99,
+          "categoria": "tradicional-4",
+          "imagem": "../imagens/bolos/bolo1.webp"
+        },
+        {
+          "id": 11,
+          "nome": "Bolo Red Velvet",
+          "descricao": "Massa vermelha aveludada com recheio e cobertura de cream cheese levemente adocicado",
+          "preco": 94.99,
+          "categoria": "tradicional-4",
+          "imagem": "../imagens/bolos/bolo1.webp"
+        },
+        {
+          "id": 12,
+          "nome": "Bolo de Limão",
+          "descricao": "Massa refrescante de limão siciliano com recheio cremoso e cobertura de merengue italiano",
+          "preco": 84.99,
+          "categoria": "tradicional-4",
+          "imagem": "../imagens/bolos/bolo1.webp"
+        }
+      ]
+    }
+  ]
+}

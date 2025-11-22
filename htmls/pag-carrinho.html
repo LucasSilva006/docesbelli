@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrinho de Compras</title>
+
+    <!-- Descrição SEO -->
+    <meta
+      name="description"
+      content="Doces Belli – Confeitaria em Caruaru especializada em bolos e tortas que transformam momentos especiais em memórias inesquecíveis. Peça já o seu!"
+    />
+    <!-- Validation styles moved to ../styles/style-pag-carrinho.css -->
+
+    
+
+    <link rel="stylesheet" href="../styles/style-pag-carrinho.css">
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="imagens/icons/favicon_io/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-inicial">
+        <img src="../imagens/logo.webp" alt="Doces Belli" />
+        <h1 class="texto-logo">Doces Belli</h1>
+      </div>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+        ☰
+      </button>
+      <nav class="menu" id="menu">
+        <a href="../index.html">Home</a>
+        <a href="../htmls/nossos-bolos.html">Nossos Sabores</a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <!-- Carrinho Vazio -->
+      <div id="empty-cart" class="card empty-cart hidden">
+        <div class="empty-cart-icon"><img src="../imagens/icons/icon-carrinho.png" alt=""></div>
+        <p class="empty-cart-text">O carrinho está vazio</p>
+        <a href="nossos-bolos.html" class="btn-primary">Ver Sabores</a>
+      </div>
+
+      <!-- Carrinho com Produtos -->
+      <div id="cart-with-items" class="hidden">
+        <!-- Carrinho -->
+        <div class="card">
+          <h2 class="card-title">Carrinho de Compras</h2>
+          <div id="cart-items"></div>
+        </div>
+
+        <div style="text-align: center">
+          <a href="../htmls/nossos-bolos.html" class="btn-secondary">Continuar Comprando</a>
+        </div>
+
+        <!-- Seus Dados -->
+        <div class="card">
+          <h2 class="card-title">Seus Dados</h2>
+          <input type="text" id="nome" placeholder="Nome" />
+          <input type="tel" id="telefone" placeholder="Telefone com DDD" />
+          <input type="email" id="email" placeholder="E-mail (opcional)" />
+        </div>
+
+        <!-- Entrega -->
+        <div class="card">
+          <h2 class="card-title">Entrega</h2>
+          <div class="delivery-options">
+            <label class="radio-label">
+              <input type="radio" name="delivery" value="entrega" checked />
+              <span>Entrega</span>
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="delivery" value="retirada" />
+              <span>Retirada</span>
+            </label>
+          </div>
+          <div id="delivery-fields">
+            <input type="text" id="endereco" placeholder="Endereço completo" />
+            <input type="text" id="bairro" placeholder="Bairro" />
+          </div>
+          <textarea
+            id="observacoes"
+            placeholder="Observações (opcional)"
+          ></textarea>
+
+          <div id="alert-retirada" class="alert hidden">
+            <p class="alert-text">
+              A taxa de entrega não vai aparecer na opção de "retirada" - você
+              busca!
+            </p>
+          </div>
+        </div>
+
+        <!-- Resumo -->
+        <div class="card">
+          <h2 class="card-title">Resumo do pedido</h2>
+          <div class="summary-line">
+            <span style="color: #6b7280">Subtotal</span>
+            <span id="subtotal" style="font-weight: 600">R$ 0,00</span>
+          </div>
+          <div class="summary-line">
+            <span style="color: #6b7280">Taxa de entrega</span>
+            <span id="taxa" style="font-weight: 600">R$ 0,00</span>
+          </div>
+          <div class="summary-line total">
+            <span>Total</span>
+            <span id="total" class="total-value">R$ 0,00</span>
+          </div>
+
+          <button type="button" class="checkout-btn" onclick="finalizarPedido()">
+            Finalizar via WhatsApp
+          </button>
+          <p class="info-text">
+            Você será redirecionado para o WhatsApp para confirmar o seu pedido
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="../javascript/pag-carrinho.js"></script>
+  </body>
+</html>
