@@ -8,8 +8,9 @@
   /* Cores */
   --cor-rosa1: #fdf4f7;
   --cor-rosa2: #f9d7d8;
-  --cor-marrom: #654336;
-  --cor-dourada-deg: linear-gradient(90deg, #f1bd61, #f6d78a);
+  --cor-marrom: #4a3829;
+  --cor-dourada: #c9a961;
+  --cor-dourada-escura: #bb9e5c;
 
   /* Fontes */
   --fonte-cursiva: "Be Vietnam Pro", sans-serif;
@@ -17,21 +18,17 @@
   --fonte-titulos: "PT Serif", serif;
 
   /* Pesos das fontes */
-  --peso-light: 300;
   --peso-normal: 400;
-  --peso-medium: 500;
   --peso-semi-bold: 600;
   --peso-bold: 700;
 
   /* Tamanhos de fonte */
-  --texto-pequeno: 0.875rem; /* 14px */
-  --texto-normal: 1rem; /* 16px */
-  --texto-medio: 1.125rem; /* 18px */
-  --texto-grande: 1.25rem; /* 20px */
-  --titulo-pequeno: 1.5rem; /* 24px */
-  --titulo-medio: 1.8rem; /* 32px */
-  --titulo-grande: 2.5rem; /* 40px */
-  --titulo-hero: 3rem; /* 48px */
+  --texto-pequeno: 0.75rem; /* 12px */
+  --texto-medio: 1rem; /* 16px */
+  --texto-grande: 1.125rem; /* 18px */
+  --titulo-medio: 1.5rem; /* 24px */
+  --titulo-grande: 2rem; /* 32px */
+  --titulo-hero: 2.5rem; /* 40px */
 }
 
 .text-bem-vindos {
@@ -74,13 +71,15 @@
 }
 
 .btn-categoria:hover {
-  background: var(--cor-dourada-deg);
+  background: var(--cor-dourada);
   transform: translateY(-2px);
+  color: white;
 }
 
 .btn-categoria.active {
-  background: var(--cor-dourada-deg);
+  background: var(--cor-dourada);
   font-weight: var(--peso-semi-bold);
+  color: white;
 }
 
 /* SEÇÕES DE CATEGORIAS */
@@ -192,7 +191,8 @@
   display: block;
   color: var(--cor-marrom);
   text-decoration: none;
-  background: var(--cor-dourada-deg);
+  background: var(--cor-dourada);
+  color: white;
   padding: 10px 20px;
   margin: 0 auto;
   border-radius: 6px;
@@ -214,7 +214,8 @@
   display: block;
   color: var(--cor-marrom);
   text-decoration: none;
-  background: var(--cor-dourada-deg);
+  background: var(--cor-dourada);
+  color: white;
   padding: 15px 10px;
   margin: 30px auto 0px auto;
   width: 80vw;

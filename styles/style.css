@@ -263,14 +263,16 @@ header img {
   grid-template-columns: repeat(auto-fit, minmax(70%, 1fr));
   gap: 20px;
   margin: 0 auto;
+  grid-auto-rows: 1fr; /* Força linhas com mesma altura */
 }
 
 .bolos {
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
   background-color: white;
   padding-bottom: 20px;
   border-radius: 8px;
-  height: auto;
   max-width: 80vw;
   box-shadow: 2px 1px 20px rgba(0, 0, 0, 0.144);
 }
@@ -278,37 +280,66 @@ header img {
 .imagem-box-bolo img {
   width: 100%;
   height: 200px;
-  object-fit: cover; /* substitui background-size: cover */
+  object-fit: cover;
   border-radius: 8px 8px 0 0;
-  display: block; /* evita espaço extra do inline */
+  display: block;
 }
 
 .desc-box-bolo {
   padding: 10px 20px 0px 20px;
-  text-align: center;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Cresce para ocupar espaço */
 }
 
 .nome-do-bolo {
   font-family: var(--fonte-texto);
   color: var(--cor-marrom);
-  font-size: var(--texto-pequeno);
+  font-size: var(--texto-grande);
+  margin-top: 1.5vh;
 }
 
-.desc-box-bolo > a {
+.descricao-bolo {
+  font-family: var(--fonte-texto);
+  color: var(--cor-marrom);
+  font-size: 0.9em;
+  margin: 10px 0;
+  line-height: 1.4;
+  opacity: 0.8;
+}
+
+.box-preco {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto; /* Ancora no final */
+  gap: 1rem;
+  padding-top: 15px;
+}
+
+.preco-bolo {
+  font-family: var(--fonte-texto);
+  color: var(--cor-marrom);
+  font-size: 1em;
+  font-weight: var(--peso-semi-bold);
+  margin: 0;
+}
+
+.preco-link-contato {
   display: block;
   color: var(--cor-rosa1);
   text-decoration: none;
   background: var(--cor-dourada);
   padding: 5px 10px;
-  margin: 10px auto 0px auto;
   max-width: 40vw;
   border-radius: 8px;
   font-family: var(--fonte-texto);
 }
 
-.desc-box-bolo > a:hover {
+.preco-link-contato:hover {
   transition: all 0.3s ease;
-  transform: scale(1.02);
+  transform: scale(1.1);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.055);
   background: var(--cor-dourada-escura);
 }
@@ -598,6 +629,7 @@ iframe {
   font-size: 0.8rem;
   line-height: 1;
   bottom: 40px;
+  margin-bottom: 0;
 }
 
 .cart-link:hover {
@@ -753,7 +785,7 @@ footer {
   }
 
   .box-dos-bolos {
-    grid-template-columns: repeat(auto-fit, minmax(23%, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
   }
 }
 
@@ -843,6 +875,6 @@ footer {
 
 @media (min-width: 1280px) {
   .box-dos-bolos {
-    grid-template-columns: repeat(auto-fit, minmax(15%, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
   }
 }
