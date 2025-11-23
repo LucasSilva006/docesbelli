@@ -208,10 +208,8 @@ function toggleDeliveryFields() {
 
   if (deliveryType === "entrega") {
     deliveryFields.classList.remove("hidden");
-    alert.classList.add("hidden");
   } else {
     deliveryFields.classList.add("hidden");
-    alert.classList.remove("hidden");
   }
 
   updateSummary();
