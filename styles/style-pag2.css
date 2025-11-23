@@ -154,10 +154,7 @@
 }
 
 .imagem-box-bolo img {
-  width: 80px;
-  height: 80px;
   object-fit: cover;
-  border-radius: 50%;
   display: block;
 }
 
@@ -176,11 +173,10 @@
   margin-bottom: 5px;
 }
 
-.desc-box-bolo p {
-  font-size: 0.75rem;
-  color: #666;
-  margin: 0;
-  line-height: 1.4;
+.preco-bolo-pag2 {
+  font-size: 1.2em;
+  color: var(--cor-marrom);
+  margin: 10px 0;
 }
 
 .desc-box-bolo > a {
@@ -256,7 +252,7 @@
   }
 
   .desc-box-bolo p {
-    font-size: 0.8rem;
+    font-size: 1,5em;
   }
 
   .preco-link-contato {
