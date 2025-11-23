@@ -12,9 +12,7 @@
     />
     <!-- Validation styles moved to ../styles/style-pag-carrinho.css -->
 
-    
-
-    <link rel="stylesheet" href="../styles/style-pag-carrinho.css">
+    <link rel="stylesheet" href="../styles/style-pag-carrinho.css" />
 
     <!-- Favicon -->
     <link
@@ -40,36 +38,41 @@
       </nav>
     </header>
 
-    <div class="container">
-      <!-- Carrinho Vazio -->
-      <div id="empty-cart" class="card empty-cart hidden">
-        <div class="empty-cart-icon"><img src="../imagens/icons/icon-carrinho.png" alt=""></div>
-        <p class="empty-cart-text">O carrinho está vazio</p>
-        <a href="nossos-bolos.html" class="btn-primary">Ver Sabores</a>
+    <!-- Carrinho Vazio -->
+    <div id="empty-cart" class="card empty-cart hidden">
+      <div class="empty-cart-icon">
+        <img src="../imagens/icons/icon-carrinho.png" alt="" />
       </div>
+      <p class="empty-cart-text">O carrinho está vazio</p>
+      <a href="nossos-bolos.html" class="btn-primary">Ver Sabores</a>
+    </div>
 
+    <div class="container">
       <!-- Carrinho com Produtos -->
       <div id="cart-with-items" class="hidden">
         <!-- Carrinho -->
-        <div class="card">
+        <div class="card" id="card-carrinho">
           <h2 class="card-title">Carrinho de Compras</h2>
           <div id="cart-items"></div>
         </div>
 
-        <div style="text-align: center">
-          <a href="../htmls/nossos-bolos.html" class="btn-secondary">Continuar Comprando</a>
+        <div style="text-align: center" id="botao-continuar-comprando">
+          <a href="../htmls/nossos-bolos.html" class="btn-secondary"
+            >Continuar Comprando</a
+          >
         </div>
+      </div>
 
+      <div class="box-dois-carrinho hidden" id="box-dois-carrinho">
         <!-- Seus Dados -->
-        <div class="card">
+        <div class="card" id="card-seus-dados">
           <h2 class="card-title">Seus Dados</h2>
           <input type="text" id="nome" placeholder="Nome" />
           <input type="tel" id="telefone" placeholder="Telefone com DDD" />
           <input type="email" id="email" placeholder="E-mail (opcional)" />
         </div>
-
         <!-- Entrega -->
-        <div class="card">
+        <div class="card" id="card-entrega">
           <h2 class="card-title">Entrega</h2>
           <div class="delivery-options">
             <label class="radio-label">
@@ -89,11 +92,9 @@
             id="observacoes"
             placeholder="Observações (opcional)"
           ></textarea>
-
         </div>
-
         <!-- Resumo -->
-        <div class="card">
+        <div class="card" id="card-resumo">
           <h2 class="card-title">Resumo do pedido</h2>
           <div class="summary-line">
             <span style="color: #6b7280">Subtotal</span>
@@ -107,8 +108,11 @@
             <span>Total</span>
             <span id="total" class="total-value">R$ 0,00</span>
           </div>
-
-          <button type="button" class="checkout-btn" onclick="finalizarPedido()">
+          <button
+            type="button"
+            class="checkout-btn"
+            onclick="finalizarPedido()"
+          >
             Finalizar via WhatsApp
           </button>
           <p class="info-text">

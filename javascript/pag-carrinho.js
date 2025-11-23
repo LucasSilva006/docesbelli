@@ -88,9 +88,11 @@ function inicializar() {
   if (cart.length === 0) {
     document.getElementById("empty-cart").classList.remove("hidden");
     document.getElementById("cart-with-items").classList.add("hidden");
+    document.getElementById("box-dois-carrinho").classList.add("hidden");
   } else {
     document.getElementById("empty-cart").classList.add("hidden");
     document.getElementById("cart-with-items").classList.remove("hidden");
+    document.getElementById("box-dois-carrinho").classList.remove("hidden");
     renderCart();
     toggleDeliveryFields();
   }
@@ -176,7 +178,11 @@ function removeItem(id) {
   if (cart.length === 0) {
     document.getElementById("empty-cart").classList.remove("hidden");
     document.getElementById("cart-with-items").classList.add("hidden");
+    document.getElementById("box-dois-carrinho").classList.add("hidden");
   } else {
+    document.getElementById("empty-cart").classList.add("hidden");
+    document.getElementById("cart-with-items").classList.remove("hidden");
+    document.getElementById("box-dois-carrinho").classList.remove("hidden");
     renderCart();
   }
 }

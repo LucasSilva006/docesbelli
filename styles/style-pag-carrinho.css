@@ -66,7 +66,7 @@ header {
 }
 
 .container {
-  max-width: 480px;
+  max-width: 80vw;
   margin: 0 auto;
   padding-bottom: 2rem;
 }
@@ -351,53 +351,21 @@ input[type="radio"] {
   margin-top: 1vh;
 }
 
-
 /* Adicione ou modifique estas regras no seu CSS */
 
 @media (min-width: 1280px) {
-  /* Aumentar o container para comportar o grid */
   .container {
-    max-width: 1400px;
-  }
-
-  #cart-with-items:not(.hidden) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    align-items: start;
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    width: 80vw;
   }
 
-  #cart-with-items > .card {
-    width: 100%;
+  #cart-with-items {
+    grid-area: 1 / 1 / 2 / 2;
   }
-
-  /* Carrinho ocupa as 2 primeiras linhas da coluna esquerda */
-  #cart-with-items > .card:nth-child(1) {
-    grid-column: 1;
-    grid-row: 1 / 3;
-  }
-
-  /* Botão continuar comprando */
-  #cart-with-items > div[style*="text-align: center"] {
-    grid-column: 1;
-    grid-row: 3;
-  }
-
-  /* Seus Dados na coluna direita */
-  #cart-with-items > .card:nth-child(3) {
-    grid-column: 2;
-    grid-row: 1;
-  }
-
-  /* Entrega na coluna direita */
-  #cart-with-items > .card:nth-child(4) {
-    grid-column: 2;
-    grid-row: 2;
-  }
-
-  /* Resumo na coluna direita */
-  #cart-with-items > .card:nth-child(5) {
-    grid-column: 2;
-    grid-row: 3;
+  #box-dois-carrinho {
+    grid-area: 1 / 2 / 2 / 3;
   }
 }
