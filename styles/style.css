@@ -128,8 +128,8 @@ header img {
 }
 
 .menu a:hover {
-  background-color: var(--azul);
-  color: var(--cinza-claro);
+  background-color: var(--cor-dourada);
+  color: white;
 }
 
 .menu.show {
@@ -463,11 +463,23 @@ header img {
 
 .text-desc-provas-reais {
   margin: 0 30px;
+  font-style: italic;
+  margin-top: 2vh;
+}
+
+.box-do-text-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* importante para que todos tenham a mesma altura */
+  padding-bottom: 20px;
 }
 
 .tit-avaliacao-provas-reais {
   font-family: var(--fonte-texto);
   margin-top: 10px;
+  font-size: 0.9em;
+  margin-left: 30px;
 }
 
 .text-provas-reais {
@@ -480,6 +492,7 @@ header img {
   padding: 10px 0;
   border-radius: 8px;
   color: var(--cor-marrom);
+  text-align: start;
 }
 
 .boxs-provas-reais {
@@ -492,6 +505,7 @@ header img {
 
 .boxs-provas-reais img {
   width: 5rem;
+  margin-left: 30px;
 }
 
 /* CONTATOS */

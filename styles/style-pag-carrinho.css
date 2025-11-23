@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: var(--cor-rosa1);
+}
+
 :root {
   /* Cores */
   --cor-rosa1: #fdf4f7;
@@ -345,4 +349,63 @@ input[type="radio"] {
   margin-bottom: 12px;
   font-family: var(--fonte-texto);
   margin-top: 1vh;
+}
+
+
+/* Adicione ou modifique estas regras no seu CSS */
+
+@media (min-width: 1280px) {
+  /* Aumentar o container para comportar o grid */
+  .container {
+    max-width: 1400px;
+  }
+
+  #cart-with-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+  }
+
+  #cart-with-items > .card {
+    width: 100%;
+  }
+
+  /* Carrinho ocupa as 2 primeiras linhas da coluna esquerda */
+  #cart-with-items > .card:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1 / 3;
+  }
+
+  /* Botão continuar comprando */
+  #cart-with-items > div[style*="text-align: center"] {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  /* Seus Dados na coluna direita */
+  #cart-with-items > .card:nth-child(3) {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  /* Entrega na coluna direita */
+  #cart-with-items > .card:nth-child(4) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  /* Resumo na coluna direita */
+  #cart-with-items > .card:nth-child(5) {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  /* Opcional: tornar a sidebar sticky */
+  #cart-with-items > .card:nth-child(3),
+  #cart-with-items > .card:nth-child(4),
+  #cart-with-items > .card:nth-child(5) {
+    position: sticky;
+    top: 20px;
+  }
 }
