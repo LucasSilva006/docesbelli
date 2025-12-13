@@ -150,7 +150,7 @@
   color: var(--cor-marrom);
 }
 
-.preco-bolo-pag2 {
+.preco-bolo-pag-2 {
   font-family: var(--fonte-texto);
   font-size: var(--texto-medio);
   font-weight: var(--peso-bold);
@@ -177,7 +177,7 @@
   gap: 4px;
 }
 
-.preco-bolo-pag2 {
+.preco-bolo-pag-2 {
   margin-top: 4px;
 }
 
