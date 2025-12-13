@@ -135,6 +135,7 @@
   margin: 8px 8px;
   background-color: #fff;
   padding: 5vw;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.158);
 }
 
 .desc-box-bolo-2 {
@@ -239,6 +240,18 @@
   }
 }
 
+@media (min-width: 620px) {
+  .box-dos-bolos-2 {
+    grid-template-columns: repeat(auto-fit, minmax(48%, 1fr));
+    gap: 20px;
+    padding: 0 3vw;
+  }
+
+  .bolos-pag2 {
+    padding: 1vw;
+  }
+}
+
 @media (min-width: 880px) {
   .nav-categorias {
     justify-content: center;
@@ -248,16 +261,16 @@
 
 /* RESPONSIVIDADE 1000px */
 @media (min-width: 1000px) {
-  .info-bolo-wrapper {
+  .info-bolo-wrapper-2 {
     gap: 15px;
   }
 
-  .imagem-box-bolo img {
+  .imagem-box-bolo-2 img {
     width: 100px;
     height: 100px;
   }
 
-  .nome-do-bolo {
+  .nome-do-bolo-2 {
     font-size: var(--texto-medio);
   }
 }
@@ -265,14 +278,16 @@
 /* RESPONSIVIDADE 1024px - 3 CARDS POR LINHA */
 @media (min-width: 1120px) {
   #sabores-destaques {
-    padding: 10px 10vw 30px 10vw;
+    padding: 10px 3vw 30px 3vw;
   }
 
-  .box-dos-bolos {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+  .box-dos-bolos-2 {
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    gap: 10px;
     padding: 0;
   }
+
+  
 
   .titulo-categoria {
     padding-left: 0;
