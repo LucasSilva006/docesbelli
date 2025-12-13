@@ -19,6 +19,7 @@ html {
   --cor-marrom: #4a3829;
   --cor-dourada: #c9a961;
   --cor-dourada-escura: #bb9e5c;
+  --cor-dourado-claro: #fffdf6;
 
   /* Fontes */
   --fonte-cursiva: "Be Vietnam Pro", sans-serif;
@@ -58,7 +59,7 @@ p {
 header {
   font-family: var(--fonte-subtitulo);
   color: var(--cor-marrom);
-  background-color: var(--cor-rosa1);
+  background-color: var(--cor-dourado-claro);
   padding: 8px 20px;
   display: flex;
   justify-content: space-between;
@@ -107,7 +108,7 @@ header img {
   display: none;
   flex-direction: column;
   gap: 1em;
-  background: var(--cor-rosa1);
+  background: var(--cor-dourado-claro);
   position: absolute;
   top: 60px;
   right: 1rem;
@@ -185,6 +186,10 @@ header img {
   font-weight: var(--peso-bold);
 }
 
+.destaque-titulo-hero-section {
+  color: #ffda84;
+}
+
 .texto-hero-section {
   font-family: var(--fonte-texto);
   z-index: 9;
@@ -243,7 +248,7 @@ header img {
 
 #sabores-destaques {
   text-align: center;
-  background-color: var(--cor-rosa1);
+  background-color: var(--cor-dourado-claro);
   padding: 10px 20px;
   scroll-margin-top: 55px;
 }
@@ -283,11 +288,6 @@ header img {
   object-fit: cover;
   border-radius: 8px 8px;
   display: block;
-}
-
-.bolos-pag2 img {
-  width: 100%;
-  height: 320px;
 }
 
 .desc-box-bolo {
@@ -384,7 +384,7 @@ header img {
 
 .boxs-diferenciais {
   margin: 20px 10px;
-  background-color: var(--cor-rosa2);
+  background-color: var(--cor-dourado-claro);
   padding: 10px 0;
   border-radius: 8px;
   color: var(--cor-marrom);
@@ -429,7 +429,7 @@ header img {
 /* PASSO A PASSO */
 
 #passo-a-passo {
-  background-color: var(--cor-rosa1);
+  background-color: var(--cor-dourado-claro);
   padding: 10px 30px;
   text-align: center;
 }
@@ -493,7 +493,7 @@ header img {
 
 .boxs-provas-reais {
   margin: 20px 0;
-  background-color: var(--cor-rosa2);
+  background-color: var(--cor-dourado-claro);
   padding: 10px 0;
   border-radius: 8px;
   color: var(--cor-marrom);
@@ -502,7 +502,7 @@ header img {
 
 .boxs-provas-reais {
   margin: 20px 10px;
-  background-color: var(--cor-rosa2);
+  background-color: var(--cor-dourado-claro);
   padding: 10px 0;
   border-radius: 8px;
   color: var(--cor-marrom);
@@ -516,45 +516,44 @@ header img {
 /* CONTATOS */
 
 #contatos {
-  background-color: var(--cor-rosa1);
-  padding: 10px 20px 30px 20px;
+  background: linear-gradient(135deg, #E8B4BB, #D9AE90, #CAA963);
+  padding: 30px 20px 30px 20px;
   text-align: center;
   scroll-margin-top: 60px;
 }
 
 .tit-contatos {
-  color: var(--cor-marrom);
+  color: white;
 }
 
 .text-contatos {
-  color: var(--cor-marrom);
+  color: white;
   margin: 20px 0;
 }
 
 .numero-contatos {
-  color: var(--cor-marrom);
+  color: white;
   margin: 20px 0;
   font-weight: var(--peso-bold);
 }
 
 .btn-contatos {
   display: block;
-  color: var(--cor-rosa1);
+  color: var(--cor-marrom);
   text-decoration: none;
-  background: var(--cor-dourada);
+  background: var(--cor-rosa1);
   padding: 15px 10px;
   margin: 15px auto 0px auto;
   max-width: 70vw;
   border-radius: 8px;
   font-size: var(--texto-medio);
   font-family: var(--fonte-texto);
+  transition: all 0.2s ease-in-out;
 }
 
 .btn-contatos:hover {
-  transition: all 0.3s ease;
   transform: scale(1.02);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.055);
-  background: var(--cor-dourada-escura);
 }
 
 /* LOCALIZAÇÃO */

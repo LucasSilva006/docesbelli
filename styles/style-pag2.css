@@ -11,6 +11,7 @@
   --cor-marrom: #4a3829;
   --cor-dourada: #c9a961;
   --cor-dourada-escura: #bb9e5c;
+  --cor-dourado-claro: #fffdf6;
 
   /* Fontes */
   --fonte-cursiva: "Be Vietnam Pro", sans-serif;
@@ -48,7 +49,7 @@
   margin-bottom: 20px;
   scrollbar-width: none;
   -ms-overflow-style: none;
-  background-color: var(--cor-rosa1);
+  background-color: var(--cor-dourado-claro);
   border-bottom: #65433621 1px solid;
 }
 
@@ -103,7 +104,7 @@
 
 #sabores-destaques {
   text-align: center;
-  background-color: var(--cor-rosa1);
+  background-color: var(--cor-dourado-claro);
   padding: 0;
 }
 
@@ -120,111 +121,83 @@
   margin-bottom: 0;
 }
 
-.box-dos-bolos {
+.box-dos-bolos-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(70%, 1fr));
+  gap: 10px;
+  margin: 0 auto;
+}
+
+.bolos-pag2 {
+  display: grid;
   grid-template-columns: 1fr;
-  gap: 15px;
-  margin-top: 15px;
-  padding: 0 10px;
+  gap: 12px;
+  margin: 8px 8px;
+  background-color: #fff;
+  padding: 5vw;
 }
 
-.bolos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 21px;
-  background-color: white;
-  padding: 15px;
-  border-radius: 8px;
-  width: 100%;
-  box-shadow: 2px 1px 20px rgba(0, 0, 0, 0.144);
-  justify-content: space-between;
+.desc-box-bolo-2 {
+  padding: 10px 0px 0px 0px;
+  text-align: start;
 }
 
-.info-bolo-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-  width: 100%;
-  text-align: center;
-}
-
-.imagem-box-bolo {
-  flex-shrink: 0;
-}
-
-.imagem-box-bolo img {
-  object-fit: cover;
-  display: block;
-}
-
-.desc-box-bolo {
-  flex: 1;
-  text-align: center;
-  padding: 0;
-  min-width: 0;
-}
-
-.nome-do-bolo {
+.nome-do-bolo-2 {
   font-family: var(--fonte-texto);
-  color: var(--cor-marrom);
-  font-size: var(--texto-pequeno);
+  font-size: var(--texto-medio);
   font-weight: var(--peso-semi-bold);
-  margin-bottom: 5px;
+  color: var(--cor-marrom);
 }
 
 .preco-bolo-pag2 {
-  font-size: 1.2em;
-  color: var(--cor-marrom);
-  margin: 10px 0;
-}
-
-.desc-box-bolo > a {
-  display: none;
-}
-
-.preco-link-contato {
-  display: block;
-  color: var(--cor-marrom);
-  text-decoration: none;
-  background: var(--cor-dourada);
-  color: white;
-  padding: 10px 20px;
-  margin: 0 auto;
-  border-radius: 6px;
-  font-size: 0.875rem;
   font-family: var(--fonte-texto);
-  font-weight: var(--peso-semi-bold);
-  white-space: nowrap;
-  transition: transform 0.2s ease;
-  text-align: center;
+  font-size: var(--texto-medio);
+  font-weight: var(--peso-bold);
+  color: var(--cor-marrom);
+}
+
+.info-bolo-wrapper-2 {
+  display: grid;
+  grid-template-columns: 30% 1fr; /* imagem | texto */
+  gap: 16px;
+  align-items: center;
+}
+
+.imagem-box-bolo-2 img {
   width: 100%;
-  max-width: 300px;
-}
-
-.preco-link-contato:hover {
-  transform: scale(1.05);
-}
-
-.btn-bolos-destaques {
-  display: block;
-  color: var(--cor-marrom);
-  text-decoration: none;
-  background: var(--cor-dourada);
-  color: white;
-  padding: 15px 10px;
-  margin: 30px auto 0px auto;
-  width: 80vw;
+  height: 100%;
+  object-fit: cover;
   border-radius: 8px;
-  font-size: var(--texto-grande);
-  font-weight: var(--peso-semi-bold);
-  transition: transform 0.2s ease;
-  font-family: var(--fonte-texto);
-  max-width: 500px;
 }
 
-.btn-bolos-destaques:hover {
-  transform: scale(1.02);
+.desc-box-bolo-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.preco-bolo-pag2 {
+  margin-top: 4px;
+}
+
+.preco-link-contato-2 {
+  grid-column: 1 / -1; /* ocupa toda a largura */
+  text-align: center;
+  margin-top: 8px;
+  padding: 10px 16px;
+  background-color: var(--cor-dourada);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-family: var(--fonte-texto);
+  font-size: var(--texto-pequeno);
+  font-weight: var(--peso-semi-bold);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.preco-link-contato-2:hover {
+  background-color: var(--cor-dourada-escura);
+  transform: translateY(-2px);
 }
 
 /* RESPONSIVIDADE 480px - 2 CARDS POR LINHA */
@@ -252,7 +225,7 @@
   }
 
   .desc-box-bolo p {
-    font-size: 1,5em;
+    font-size: 1, 5em;
   }
 
   .preco-link-contato {
@@ -287,7 +260,6 @@
   .nome-do-bolo {
     font-size: var(--texto-medio);
   }
-
 }
 
 /* RESPONSIVIDADE 1024px - 3 CARDS POR LINHA */
